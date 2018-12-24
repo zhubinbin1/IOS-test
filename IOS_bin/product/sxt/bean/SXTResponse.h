@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SXTCards.h"
 
 @interface SXTResponse : NSObject
-
+@property(nonatomic,assign)NSUInteger dm_error;
+@property(nonatomic,copy)NSString* error_msg;
+@property(nonatomic,strong)NSArray<SXTCards*>* cards;
++(NSMutableArray *)keyValuesArrayWithObjectArray:(NSArray *)objectArray ignoredKeys:(NSArray *)ignoredKeys;
 @end

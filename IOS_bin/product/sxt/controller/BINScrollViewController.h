@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface BINScrollViewController : UIViewController
+@interface BINScrollViewController : BaseViewController
 
 @end

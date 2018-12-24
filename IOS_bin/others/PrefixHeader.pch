@@ -1,15 +1,38 @@
 //
 //  PrefixHeader.pch
 //  IOS_bin
-//
+//配置pch bulid.setting prefix headers 相对路径...$(SRCROOT)
 //  Created by binbin on 2018/12/5.
 //  Copyright © 2018年 binbin. All rights reserved.
 //
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#ifdef __OBJC__//objc开始
+//在OC头文件前后加了这个条件编译之后，
+//编译器便不再将OC的头文件拷贝到C语言的源文件中，它只会把OC的头文件拷贝到OC的源文件中
+#import "ViewUtils.h"
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
+#import <MJExtension.h>
+//#import <SVProgressHUD.h>
+#import <UIImageView+WebCache.h>
+#import <SDWebImageManager.h>
+#import <SDWebImageDownloader.h>
+#import <UIImage+GIF.h>
+#import <NSObject+FBKVOController.h>
+#import <FBKVOController.h>
+#import "APIConfig.h"
+#import <UINavigationController+FDFullscreenPopGesture.h>
+#import "UIColor+HEX.h"
+#import "NSString+CachePath.h"
+#import <YYKit.h>
 
+
+#define screenW [UIScreen mainScreen].bounds.size.width
+#define screenH [UIScreen mainScreen].bounds.size.height
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
+#endif//objc 结束
 #endif /* PrefixHeader_pch */

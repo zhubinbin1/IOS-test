@@ -11,4 +11,5 @@
 
 @interface ViewUtils : NSObject
 +(int)getScreenW;
++(UIImage*)getLocalImgByBundle:(NSString*)name type:(NSString*)type;
 @end

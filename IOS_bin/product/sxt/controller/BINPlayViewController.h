@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <IJKMediaFramework/IJKMediaFramework.h>
 @interface BINPlayViewController : UIViewController
 
 @end

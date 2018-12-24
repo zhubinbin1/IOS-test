@@ -7,7 +7,54 @@
 //
 
 #import "getNetHelper.h"
+#import "HttpTool.h"
+#import "SXTResponse.h"
 
 @implementation getNetHelper
+//MARK:test
+-(void) getYingKeNet{
+    NSDictionary* par = @{@"offset":@1};
+    [HttpTool getWithPath:API_HomePage params:par success:^(id json) {
+        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+        NSLog(@"success===:%@",res.error_msg);
+        //        SXTResponse MJReplacedKeyFromPropertyName121
+    } failure:^(NSError *error) {
+        NSLog(@"error===:%@",error);
+    }];
+}
+- (void)getYingKeHomeDataWithPage:(NSInteger)page success:(SUCCESS)success fail:(FAILED)failed{
+    NSMutableDictionary* par = [[NSMutableDictionary alloc] init];
+//    [par setValue:page forKey:@"offset"];
+    [par setObject:@(page) forKey:@"offset"];
+    [HttpTool getWithPath:API_HomePage params:par success:^(id json) {
+        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+        NSLog(@"success===:%@",res.error_msg);
+        success(res);
+    } failure:^(NSError *error) {
+        failed(error);
+        NSLog(@"error===:%@",error);
+    }];
+}
+- (void)getYingKeNearData:(SUCCESS)success fail:(FAILED)failed{
+    //    uid=85149891&latitude=40.090562&longitude=116.413353
+    NSDictionary* par = @{@"uid":@85149891,@"latitude":@40.090562,@"longitude":@116.413353};
 
+    [HttpTool getWithPath:API_NearBy params:par success:^(id json) {
+        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+        NSLog(@"success===:%@",res.error_msg);
+        success(res);
+    } failure:^(NSError *error) {
+        
+    }];
+}
+- (void)getYingKeUserFeedData:(SUCCESS)success fail:(FAILED)failed{
+//    NSDictionary* par = @{@"offset":@1};
+    [HttpTool getWithPath:API_UserFeed params:nil success:^(id json) {
+        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+        NSLog(@"success===:%@",res.error_msg);
+        success(res);
+    } failure:^(NSError *error) {
+        
+    }];
+}
 @end

@@ -1,0 +1,92 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - DOUAudioStreamer (0.2.15)
+  - FDFullscreenPopGesture (1.1)
+  - FlickerNumber (1.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GoogleMaps/Base (2.5.0)
+  - GooglePlaces (2.5.0):
+    - GoogleMaps/Base (= 2.5.0)
+  - KVOController (1.2.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (2.3.8)
+  - MJRefresh (3.1.15.1)
+  - RegExCategories (1.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0.4)
+  - DOUAudioStreamer
+  - FDFullscreenPopGesture (= 1.1)
+  - FlickerNumber (= 1.1)
+  - FMDB (= 2.7.5)
+  - GooglePlaces (= 2.5.0)
+  - KVOController (= 1.2.0)
+  - Masonry (= 1.1.0)
+  - MBProgressHUD (= 1.1.0)
+  - MJExtension (~> 2.3.7)
+  - MJRefresh (= 3.1.15.1)
+  - RegExCategories (~> 1.0)
+  - SDWebImage (= 4.4.2)
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - DOUAudioStreamer
+    - FDFullscreenPopGesture
+    - FlickerNumber
+    - FMDB
+    - GoogleMaps
+    - GooglePlaces
+    - KVOController
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - RegExCategories
+    - SDWebImage
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  DOUAudioStreamer: 14f217bab01b52171fc2bd7d96e1f8fdd50fce68
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FlickerNumber: bce41da51904d533393d69e9734df6281ab1c646
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: d83b55e6cb95c6274388539c782386b56f394a6d
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: fddb3d184ee4e9efcea04657b3ae07e00a0885c3
+
+COCOAPODS: 1.6.0.beta.2

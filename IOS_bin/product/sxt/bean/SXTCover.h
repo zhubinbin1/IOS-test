@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface SXTCover : NSObject
-
+@property(nonatomic,copy)NSString* elements;
+@property(nonatomic,assign)NSInteger style;
 @end

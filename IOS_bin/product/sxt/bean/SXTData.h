@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SXTLiveInfo.h"
 
 @interface SXTData : NSObject
-
+@property(nonatomic,strong)SXTLiveInfo* live_info;
+@property(nonatomic,assign)NSInteger pos;
+@property(nonatomic,copy)NSString* redirect_type;
 @end

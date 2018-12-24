@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface TableViewTestViewController : BaseViewController
+@interface TableViewTestViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

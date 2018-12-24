@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-
+/**
+ 自动布局测试
+ */
 @interface MasonryTestViewController : BaseViewController
 
 @end

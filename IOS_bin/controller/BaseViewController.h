@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseViewController : UIViewController
-
+-(UIColor*)randomColor;
+-(void)initViewBarItem:(NSString*)title leftTitle:(NSString*)leftTitle rightTitle:(NSString*)rightTitle;
+-(void)leftBarClick:(UIButton *)btn;
+-(void)rightBarClick:(UIButton *)btn;
 @end

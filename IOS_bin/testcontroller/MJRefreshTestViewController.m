@@ -7,6 +7,9 @@
 //
 
 #import "MJRefreshTestViewController.h"
+#import <MJRefresh.h>
+#import <MJRefreshHeader.h>
+#import <MJRefreshFooter.h>
 
 @interface MJRefreshTestViewController ()
 

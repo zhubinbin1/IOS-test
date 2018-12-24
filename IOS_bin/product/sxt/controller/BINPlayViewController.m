@@ -4,9 +4,10 @@
 //
 //  Created by binbin on 2018/12/23.
 //  Copyright © 2018年 binbin. All rights reserved.
-//
+// 直播播放页面
 
 #import "BINPlayViewController.h"
+
 
 @interface BINPlayViewController ()
 

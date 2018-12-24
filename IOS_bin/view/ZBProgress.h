@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ZBProgress : NSObject
-
++(void)showProgress:(UIView*)view;
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class SXTResponse;
+typedef void((^SUCCESS)(SXTResponse* respon));
+typedef void((^FAILED)(NSError* error));
 @interface getNetHelper : NSObject
-
+-(void) getYingKeHomeDataWithPage:(NSInteger) page success:(SUCCESS)success fail:(FAILED)failed;
+-(void) getYingKeNearData:(SUCCESS)success fail:(FAILED)failed;
+-(void) getYingKeUserFeedData:(SUCCESS)success fail:(FAILED)failed;
 @end

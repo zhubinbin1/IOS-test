@@ -7,8 +7,9 @@
 //
 
 #import "AudioStreamerViewController.h"
+#import <DOUAudioFile.h>
 
-@interface AudioStreamerViewController ()
+@interface AudioStreamerViewController ()<DOUAudioFile>
 
 @end
 
@@ -16,9 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initViewBarItem:@"音频播放" leftTitle:@"🔙"rightTitle:@""];
 }
-
+- (NSURL *)audioFileURL{
+    return [NSURL URLWithString:@""];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

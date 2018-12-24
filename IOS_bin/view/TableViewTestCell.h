@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewTestCell : TableView
-
+@interface TableViewTestCell : UITableViewCell
+@property (nonatomic,weak)UIImageView* iconView;
+@property (nonatomic, weak) UILabel *labName;
+@property(nonatomic,weak)UILabel * labDescribe;
 @end

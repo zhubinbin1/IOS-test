@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "NavigationRootViewController.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,14 +18,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-     self.window =[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController * viewController = [[ViewController alloc] init];
-    [self.window setRootViewController:(viewController)] ;
+    self.window =[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    RootViewController * rootViewController = [[RootViewController alloc]init];
+    NavigationRootViewController * navigationVC = [[NavigationRootViewController alloc] initWithRootViewController:rootViewController];
+    
+    //NavViewController* navagationController = [[NavViewController alloc]init];
+    [self.window setRootViewController:(navigationVC)];
     [self.window makeKeyAndVisible];
-    int a =  ViewUtils.getScreenW;
-    int b = screenH;
-    a = screenW;
-    NSLog(@"zhubin===w:%d   h:%d",a,b);
+    //    int a =  ViewUtils.getScreenW;
+    //    int b = screenH;
+    //    a = screenW;
+    //    NSLog(@"zhubin===w:%d   h:%d",a,b);
     return YES;
 }
 

@@ -7,6 +7,8 @@
 //
 
 #import "FMDBViewController.h"
+#import <FMDB.h>
+
 
 @interface FMDBViewController ()
 
