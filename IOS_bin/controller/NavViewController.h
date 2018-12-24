@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+/**
+ 根视图导航控制器
+ */
+@interface ViewController : UINavigationController
 
 
 @end
