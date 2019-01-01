@@ -9,5 +9,7 @@
 #import "SXTLiveInfo.h"
 
 @implementation SXTLiveInfo
-
++ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"ID":@"id"};
+}
 @end

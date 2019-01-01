@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BINNearByViewController : UIViewController
+@interface BINNearByViewController : UITableViewController
 
 @end

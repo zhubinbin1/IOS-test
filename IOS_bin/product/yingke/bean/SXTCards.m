@@ -9,5 +9,8 @@
 #import "SXTCards.h"
 
 @implementation SXTCards
-
+//- (NSMutableDictionary *)key
+//+(instancetype)objectWithKeyValues:(id)keyValues{
+//    return @{@"data":[SXTData class]};
+//}
 @end

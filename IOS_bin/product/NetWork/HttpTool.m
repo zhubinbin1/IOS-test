@@ -27,6 +27,7 @@ static NSString * kBaseUrl = SERVER_HOST;
         client = [[AFHttpClient alloc] initWithBaseURL:[NSURL URLWithString:kBaseUrl] sessionConfiguration:configuration];
         //接收参数类型
         client.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/html", @"text/json", @"text/javascript",@"text/plain",@"image/gif", nil];
+        [client.requestSerializer setValue:@"application/x-www-form-urlencoded;charset=utf8" forHTTPHeaderField:@"Content-Type"];
         //设置超时时间
         client.requestSerializer.timeoutInterval = 15;
         //安全策略

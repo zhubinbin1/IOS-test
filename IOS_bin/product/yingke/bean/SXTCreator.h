@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SXTCreator : NSObject
-@property (nonatomic, copy) NSArray  *albums;
+@property (nonatomic, copy) NSArray<NSString*>* albums;
 @property (nonatomic, copy) NSString *birth;
 @property (nonatomic, copy) NSString *current_value;
 @property (nonatomic, copy) NSString *desc;//description
@@ -32,4 +32,5 @@
 @property (nonatomic, copy) NSNumber *verified;
 @property (nonatomic, copy) NSString *verified_prefix;
 @property (nonatomic, copy) NSString *verified_reason;
+
 @end

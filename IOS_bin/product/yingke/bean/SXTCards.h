@@ -13,4 +13,5 @@
 @interface SXTCards : NSObject
 @property(nonatomic,strong)SXTCover* cover;
 @property(nonatomic,strong)SXTData* data;
+
 @end

@@ -10,6 +10,10 @@
 
 @implementation SXTCreator
 
-
-
++ (NSDictionary *)objectClassInArray{
+    return @{@"albums":[NSString class]};
+}
+//+(NSDictionary *)objectClassInArray{
+//    return @{@"cards":[SXTCards class]};
+//}
 @end

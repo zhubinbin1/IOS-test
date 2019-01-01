@@ -10,5 +10,8 @@
 
 @implementation SXTResponse
 //self MJReplacedKeyFromPropertyName121
++(NSDictionary *)objectClassInArray{
+    return @{@"cards":[SXTCards class]};
+}
 
 @end

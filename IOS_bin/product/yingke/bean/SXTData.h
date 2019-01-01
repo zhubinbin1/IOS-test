@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "SXTLiveInfo.h"
+#import "YKTicker.h"
 
 @interface SXTData : NSObject
 @property(nonatomic,strong)SXTLiveInfo* live_info;
 @property(nonatomic,assign)NSInteger pos;
 @property(nonatomic,copy)NSString* redirect_type;
+@property(nonatomic,strong)NSArray<YKTicker*>* ticker;
 @end

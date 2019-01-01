@@ -28,6 +28,7 @@
 #import "UIColor+HEX.h"
 #import "NSString+CachePath.h"
 #import <YYKit.h>
+#import "UIImageView+SDWebImage.h"
 
 
 #define screenW [UIScreen mainScreen].bounds.size.width

@@ -44,7 +44,7 @@
 		2E20507B21CF2FC30025C587 /* SXTCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507A21CF2FC30025C587 /* SXTCover.m */; };
 		2E20507E21CF31300025C587 /* SXTData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507D21CF31300025C587 /* SXTData.m */; };
 		2E20508121CF316E0025C587 /* SXTLiveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508021CF316E0025C587 /* SXTLiveInfo.m */; };
-		2E20508421CF430B0025C587 /* getNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508321CF430B0025C587 /* getNetHelper.m */; };
+		2E20508421CF430B0025C587 /* YingkNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508321CF430B0025C587 /* YingkNetHelper.m */; };
 		2E20508821CF93A20025C587 /* BINScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508721CF93A20025C587 /* BINScrollViewController.m */; };
 		2E20508E21CF9C9A0025C587 /* BINNearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508D21CF9C9A0025C587 /* BINNearByViewController.m */; };
 		2E20509121CF9CF50025C587 /* BINLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509021CF9CF50025C587 /* BINLiveViewController.m */; };
@@ -52,6 +52,10 @@
 		2E20509821CFA5D60025C587 /* SXTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509621CFA5D60025C587 /* SXTMainTopView.m */; };
 		2E20509B21CFBCCF0025C587 /* BINPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509A21CFBCCF0025C587 /* BINPlayViewController.m */; };
 		2E20509D21CFBD4F0025C587 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E20509C21CFBD4F0025C587 /* IJKMediaFramework.framework */; };
+		2EAA54FA21DB271D00450F13 /* YKNearByTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA54F921DB271D00450F13 /* YKNearByTableViewCell.m */; };
+		2EAA54FD21DB979900450F13 /* YKBannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA54FC21DB979900450F13 /* YKBannerTableViewCell.m */; };
+		2EAA550021DB97B600450F13 /* YKLiveBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA54FF21DB97B600450F13 /* YKLiveBaseTableViewCell.m */; };
+		2EAA550321DBA20000450F13 /* YKTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA550221DBA20000450F13 /* YKTicker.m */; };
 		2EF762D221BA320100ABFEB1 /* ZBProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF762D121BA320100ABFEB1 /* ZBProgress.m */; };
 		A7E6421AB2B0E9B67D05F003 /* libPods-IOS_bin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E436C4263F4D6560C4FAC5 /* libPods-IOS_bin.a */; };
 /* End PBXBuildFile section */
@@ -149,8 +153,8 @@
 		2E20507D21CF31300025C587 /* SXTData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTData.m; sourceTree = "<group>"; };
 		2E20507F21CF316E0025C587 /* SXTLiveInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLiveInfo.h; sourceTree = "<group>"; };
 		2E20508021CF316E0025C587 /* SXTLiveInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLiveInfo.m; sourceTree = "<group>"; };
-		2E20508221CF430B0025C587 /* getNetHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getNetHelper.h; sourceTree = "<group>"; };
-		2E20508321CF430B0025C587 /* getNetHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getNetHelper.m; sourceTree = "<group>"; };
+		2E20508221CF430B0025C587 /* YingkNetHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YingkNetHelper.h; sourceTree = "<group>"; };
+		2E20508321CF430B0025C587 /* YingkNetHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YingkNetHelper.m; sourceTree = "<group>"; };
 		2E20508621CF93A20025C587 /* BINScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BINScrollViewController.h; sourceTree = "<group>"; };
 		2E20508721CF93A20025C587 /* BINScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BINScrollViewController.m; sourceTree = "<group>"; };
 		2E20508C21CF9C9A0025C587 /* BINNearByViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BINNearByViewController.h; sourceTree = "<group>"; };
@@ -164,6 +168,14 @@
 		2E20509921CFBCCF0025C587 /* BINPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BINPlayViewController.h; sourceTree = "<group>"; };
 		2E20509A21CFBCCF0025C587 /* BINPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BINPlayViewController.m; sourceTree = "<group>"; };
 		2E20509C21CFBD4F0025C587 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		2EAA54F821DB271D00450F13 /* YKNearByTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKNearByTableViewCell.h; sourceTree = "<group>"; };
+		2EAA54F921DB271D00450F13 /* YKNearByTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKNearByTableViewCell.m; sourceTree = "<group>"; };
+		2EAA54FB21DB979900450F13 /* YKBannerTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKBannerTableViewCell.h; sourceTree = "<group>"; };
+		2EAA54FC21DB979900450F13 /* YKBannerTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKBannerTableViewCell.m; sourceTree = "<group>"; };
+		2EAA54FE21DB97B600450F13 /* YKLiveBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKLiveBaseTableViewCell.h; sourceTree = "<group>"; };
+		2EAA54FF21DB97B600450F13 /* YKLiveBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKLiveBaseTableViewCell.m; sourceTree = "<group>"; };
+		2EAA550121DBA20000450F13 /* YKTicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKTicker.h; sourceTree = "<group>"; };
+		2EAA550221DBA20000450F13 /* YKTicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKTicker.m; sourceTree = "<group>"; };
 		2EF762D021BA320100ABFEB1 /* ZBProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBProgress.h; sourceTree = "<group>"; };
 		2EF762D121BA320100ABFEB1 /* ZBProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBProgress.m; sourceTree = "<group>"; };
 		4F096417AA67803393D52E0E /* Pods-IOS_bin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_bin.release.xcconfig"; path = "Target Support Files/Pods-IOS_bin/Pods-IOS_bin.release.xcconfig"; sourceTree = "<group>"; };
@@ -420,8 +432,8 @@
 				2E20509521CFA5BA0025C587 /* view */,
 				2E20508521CF93530025C587 /* controller */,
 				2E20506F21CF2BB50025C587 /* bean */,
-				2E20508221CF430B0025C587 /* getNetHelper.h */,
-				2E20508321CF430B0025C587 /* getNetHelper.m */,
+				2E20508221CF430B0025C587 /* YingkNetHelper.h */,
+				2E20508321CF430B0025C587 /* YingkNetHelper.m */,
 			);
 			path = yingke;
 			sourceTree = "<group>";
@@ -441,6 +453,8 @@
 				2E20507D21CF31300025C587 /* SXTData.m */,
 				2E20507F21CF316E0025C587 /* SXTLiveInfo.h */,
 				2E20508021CF316E0025C587 /* SXTLiveInfo.m */,
+				2EAA550121DBA20000450F13 /* YKTicker.h */,
+				2EAA550221DBA20000450F13 /* YKTicker.m */,
 			);
 			path = bean;
 			sourceTree = "<group>";
@@ -467,6 +481,12 @@
 			children = (
 				2E20509721CFA5D60025C587 /* SXTMainTopView.h */,
 				2E20509621CFA5D60025C587 /* SXTMainTopView.m */,
+				2EAA54F821DB271D00450F13 /* YKNearByTableViewCell.h */,
+				2EAA54F921DB271D00450F13 /* YKNearByTableViewCell.m */,
+				2EAA54FB21DB979900450F13 /* YKBannerTableViewCell.h */,
+				2EAA54FC21DB979900450F13 /* YKBannerTableViewCell.m */,
+				2EAA54FE21DB97B600450F13 /* YKLiveBaseTableViewCell.h */,
+				2EAA54FF21DB97B600450F13 /* YKLiveBaseTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -684,8 +704,9 @@
 				2E0B810221BCE83D00E8AE37 /* DownImgViewController.m in Sources */,
 				2E1D17BF21B7FD3A00A473D9 /* ViewUtils.m in Sources */,
 				2E1D178721B6A08F00A473D9 /* AppDelegate.m in Sources */,
-				2E20508421CF430B0025C587 /* getNetHelper.m in Sources */,
+				2E20508421CF430B0025C587 /* YingkNetHelper.m in Sources */,
 				2E20507B21CF2FC30025C587 /* SXTCover.m in Sources */,
+				2EAA54FA21DB271D00450F13 /* YKNearByTableViewCell.m in Sources */,
 				2E0B811C21BD3AB300E8AE37 /* TableViewTestViewController.m in Sources */,
 				2E0B812321BE291F00E8AE37 /* TableViewTestCell.m in Sources */,
 				2E0C6E0F21C606DA00E52214 /* AudioStreamerViewController.m in Sources */,
@@ -693,12 +714,15 @@
 				2E0C6E1221C6097300E52214 /* FMDBViewController.m in Sources */,
 				2E20508E21CF9C9A0025C587 /* BINNearByViewController.m in Sources */,
 				2E0C6E1521C609A800E52214 /* MJRefreshTestViewController.m in Sources */,
+				2EAA550021DB97B600450F13 /* YKLiveBaseTableViewCell.m in Sources */,
 				2E0B812021BDEADC00E8AE37 /* TableViewData.m in Sources */,
 				2E0B810C21BD07CD00E8AE37 /* ViewTestViewController.m in Sources */,
+				2EAA54FD21DB979900450F13 /* YKBannerTableViewCell.m in Sources */,
 				2E20506921CE66820025C587 /* UIColor+HEX.m in Sources */,
 				2E20505A21CE665D0025C587 /* UIImageView+SDWebImage.m in Sources */,
 				2E20507821CF2F430025C587 /* SXTCards.m in Sources */,
 				2E20507E21CF31300025C587 /* SXTData.m in Sources */,
+				2EAA550321DBA20000450F13 /* YKTicker.m in Sources */,
 				2E20507521CF2EE30025C587 /* SXTResponse.m in Sources */,
 				2E20509121CF9CF50025C587 /* BINLiveViewController.m in Sources */,
 				2E20505B21CE665D0025C587 /* HttpTool.m in Sources */,

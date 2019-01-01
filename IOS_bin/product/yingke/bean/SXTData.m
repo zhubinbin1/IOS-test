@@ -9,5 +9,7 @@
 #import "SXTData.h"
 
 @implementation SXTData
-
++(NSDictionary *)objectClassInArray{
+    return @{@"ticker":[YKTicker class]};
+}
 @end

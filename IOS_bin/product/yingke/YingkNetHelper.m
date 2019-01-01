@@ -6,11 +6,11 @@
 //  Copyright © 2018年 binbin. All rights reserved.
 //
 
-#import "getNetHelper.h"
+#import "YingkNetHelper.h"
 #import "HttpTool.h"
 #import "SXTResponse.h"
 
-@implementation getNetHelper
+@implementation YingkNetHelper
 //MARK:test
 -(void) getYingKeNet{
     NSDictionary* par = @{@"offset":@1};
@@ -31,7 +31,7 @@
         NSLog(@"success===:%@",res.error_msg);
         success(res);
     } failure:^(NSError *error) {
-        failed(error);
+    failed(error);
         NSLog(@"error===:%@",error);
     }];
 }
@@ -40,9 +40,9 @@
     NSDictionary* par = @{@"uid":@85149891,@"latitude":@40.090562,@"longitude":@116.413353};
 
     [HttpTool getWithPath:API_NearBy params:par success:^(id json) {
-        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
-        NSLog(@"success===:%@",res.error_msg);
-        success(res);
+        SXTResponse* resObj =  [SXTResponse objectWithKeyValues:json];
+        NSLog(@"success===:%@",resObj.error_msg);
+        success(resObj);
     } failure:^(NSError *error) {
         
     }];
