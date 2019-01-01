@@ -10,14 +10,14 @@
 @interface YKLiveBaseTableViewCell()
 @end
 @implementation YKLiveBaseTableViewCell
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.backgroundColor = [UIColor blueColor];
-    }
-    return self;
-}
+//- (instancetype)initWithFrame:(CGRect)frame
+//{
+//    self = [super initWithFrame:frame];
+//    if (self) {
+//        self.backgroundColor = [UIColor blueColor];
+//    }
+//    return self;
+//}
 - (void)setData:(SXTCards*)card{
     
 }
