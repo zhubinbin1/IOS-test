@@ -365,7 +365,7 @@
 		2E20505321CE62810025C587 /* product */ = {
 			isa = PBXGroup;
 			children = (
-				2E20506E21CF2BA40025C587 /* sxt */,
+				2E20506E21CF2BA40025C587 /* yingke */,
 				2E20505421CE665D0025C587 /* NetWork */,
 			);
 			path = product;
@@ -414,7 +414,7 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		2E20506E21CF2BA40025C587 /* sxt */ = {
+		2E20506E21CF2BA40025C587 /* yingke */ = {
 			isa = PBXGroup;
 			children = (
 				2E20509521CFA5BA0025C587 /* view */,
@@ -423,7 +423,7 @@
 				2E20508221CF430B0025C587 /* getNetHelper.h */,
 				2E20508321CF430B0025C587 /* getNetHelper.m */,
 			);
-			path = sxt;
+			path = yingke;
 			sourceTree = "<group>";
 		};
 		2E20506F21CF2BB50025C587 /* bean */ = {
