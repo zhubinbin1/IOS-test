@@ -1,54 +1,34 @@
 //
-//  YKNearByTableViewCell.m
+//  YKLiveCollectionViewCell.m
 //  IOS_bin
 //
-//  Created by binbin on 2019/1/1.
+//  Created by binbin on 2019/1/2.
 //  Copyright © 2019年 binbin. All rights reserved.
 //
 
-#import "YKNearByTableViewCell.h"
-
-@interface YKNearByTableViewCell()
+#import "YKLiveCollectionViewCell.h"
+@interface YKLiveCollectionViewCell()
+@property(nonatomic,strong)SXTCards* mCard;
 @property(nonatomic,strong)UILabel* cityLabel;
 @property(nonatomic,strong)UILabel* nickNameLabel;
 @property(nonatomic,strong)UILabel* numberTabLabel;
 @property(nonatomic,strong)UILabel* renQiLabel;
 @property(nonatomic,strong)UIImageView* coverImg;
-
 @end
-@implementation YKNearByTableViewCell
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-    
+@implementation YKLiveCollectionViewCell
+-(void)setData:(SXTCards*)card{
+    self.mCard = card;
+    [self.coverImg downloadImage:card.data.live_info.creator.portrait placeholder:@"gift_icon_vote"];
 }
--(void) setData:(SXTCards*) card{
-    self.card = card;
-    if (card&&card.data&&card.data.live_info) {
-        SXTLiveInfo* liveInfo =card.data.live_info;
-        if(liveInfo.creator) {
-            [self.coverImg downloadImage: liveInfo.creator.portrait placeholder:@"sm_gift_bag_empty"];
-            [self.numberTabLabel setText:liveInfo.creator.veri_info];
-            [self.nickNameLabel setText:liveInfo.creator.nick];
-            if (liveInfo.city) {
-                [self.cityLabel setText:liveInfo.city];
-            }
-        }
-        [self.renQiLabel setText:[liveInfo.online_users stringValue]];
-    }
-//    NSLog(@"YKNearByTableViewCell===%@",self.card);
-    
-}
-- (void)layoutSubviews{
-    [super layoutSubviews];
-}
--(instancetype)initWithFrame:(CGRect)frame{
-    if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor yellowColor];
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
         [self reLayout];
     }
     return self;
 }
+
 -(void)reLayout{
     [self.coverImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self).insets(UIEdgeInsetsMake(5, 10, 5, 10));
@@ -77,7 +57,7 @@
         _coverImg = [[UIImageView alloc]init];
         _coverImg.layer.cornerRadius = 10;
         _coverImg.layer.masksToBounds = YES;
-          _coverImg.backgroundColor = [UIColor yellowColor];
+//        _coverImg.backgroundColor = [UIColor yellowColor];
         [self addSubview:_coverImg];
     }
     return _coverImg;

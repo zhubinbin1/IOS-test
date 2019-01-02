@@ -56,6 +56,7 @@
 		2EAA54FD21DB979900450F13 /* YKBannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA54FC21DB979900450F13 /* YKBannerTableViewCell.m */; };
 		2EAA550021DB97B600450F13 /* YKLiveBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA54FF21DB97B600450F13 /* YKLiveBaseTableViewCell.m */; };
 		2EAA550321DBA20000450F13 /* YKTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA550221DBA20000450F13 /* YKTicker.m */; };
+		2EAA550621DC81C200450F13 /* YKLiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA550521DC81C200450F13 /* YKLiveCollectionViewCell.m */; };
 		2EF762D221BA320100ABFEB1 /* ZBProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF762D121BA320100ABFEB1 /* ZBProgress.m */; };
 		A7E6421AB2B0E9B67D05F003 /* libPods-IOS_bin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E436C4263F4D6560C4FAC5 /* libPods-IOS_bin.a */; };
 /* End PBXBuildFile section */
@@ -176,6 +177,8 @@
 		2EAA54FF21DB97B600450F13 /* YKLiveBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKLiveBaseTableViewCell.m; sourceTree = "<group>"; };
 		2EAA550121DBA20000450F13 /* YKTicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKTicker.h; sourceTree = "<group>"; };
 		2EAA550221DBA20000450F13 /* YKTicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKTicker.m; sourceTree = "<group>"; };
+		2EAA550421DC81C200450F13 /* YKLiveCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKLiveCollectionViewCell.h; sourceTree = "<group>"; };
+		2EAA550521DC81C200450F13 /* YKLiveCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKLiveCollectionViewCell.m; sourceTree = "<group>"; };
 		2EF762D021BA320100ABFEB1 /* ZBProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBProgress.h; sourceTree = "<group>"; };
 		2EF762D121BA320100ABFEB1 /* ZBProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBProgress.m; sourceTree = "<group>"; };
 		4F096417AA67803393D52E0E /* Pods-IOS_bin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_bin.release.xcconfig"; path = "Target Support Files/Pods-IOS_bin/Pods-IOS_bin.release.xcconfig"; sourceTree = "<group>"; };
@@ -487,6 +490,8 @@
 				2EAA54FC21DB979900450F13 /* YKBannerTableViewCell.m */,
 				2EAA54FE21DB97B600450F13 /* YKLiveBaseTableViewCell.h */,
 				2EAA54FF21DB97B600450F13 /* YKLiveBaseTableViewCell.m */,
+				2EAA550421DC81C200450F13 /* YKLiveCollectionViewCell.h */,
+				2EAA550521DC81C200450F13 /* YKLiveCollectionViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -691,6 +696,7 @@
 				2E20509821CFA5D60025C587 /* SXTMainTopView.m in Sources */,
 				2E20506A21CE66820025C587 /* NSString+CachePath.m in Sources */,
 				2EF762D221BA320100ABFEB1 /* ZBProgress.m in Sources */,
+				2EAA550621DC81C200450F13 /* YKLiveCollectionViewCell.m in Sources */,
 				2E0B810521BCED1500E8AE37 /* NavigationRootViewController.m in Sources */,
 				2E20507221CF2BDC0025C587 /* SXTCreator.m in Sources */,
 				2E0B810821BCED3400E8AE37 /* RootViewController.m in Sources */,
