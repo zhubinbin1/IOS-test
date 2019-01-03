@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@class SXTResponse;
-typedef void((^SUCCESS)(SXTResponse* respon));
+@class YKResponse;
+typedef void((^SUCCESS)(YKResponse* respon));
 typedef void((^FAILED)(NSError* error));
 @interface YingkNetHelper : NSObject
 -(void) getYingKeHomeDataWithPage:(NSInteger) page success:(SUCCESS)success fail:(FAILED)failed;

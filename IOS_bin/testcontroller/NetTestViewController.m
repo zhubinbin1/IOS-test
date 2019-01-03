@@ -10,7 +10,7 @@
 #import "DownImgViewController.h"
 #import "HttpTool.h"
 #import "APIConfig.h"
-#import "SXTResponse.h"
+#import "YKResponse.h"
 #import "MJExtension.h"
 /**
  网络测试
@@ -50,7 +50,7 @@
 -(void) getYingKeNet{
     NSDictionary* par = @{@"offset":@1};
     [HttpTool getWithPath:API_HomePage params:par success:^(id json) {
-       SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+       YKResponse* res =  [YKResponse objectWithKeyValues:json];
         NSLog(@"success===:%@",res.error_msg);
 //        SXTResponse MJReplacedKeyFromPropertyName121
     } failure:^(NSError *error) {

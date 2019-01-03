@@ -53,17 +53,17 @@
 		2E20506A21CE66820025C587 /* NSString+CachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20506621CE66820025C587 /* NSString+CachePath.m */; };
 		2E20506D21CE745B0025C587 /* BINScrollViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20506C21CE745B0025C587 /* BINScrollViewTestViewController.m */; };
 		2E20507221CF2BDC0025C587 /* SXTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507121CF2BDC0025C587 /* SXTCreator.m */; };
-		2E20507521CF2EE30025C587 /* SXTResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507421CF2EE30025C587 /* SXTResponse.m */; };
-		2E20507821CF2F430025C587 /* SXTCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507721CF2F430025C587 /* SXTCards.m */; };
+		2E20507521CF2EE30025C587 /* YKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507421CF2EE30025C587 /* YKResponse.m */; };
+		2E20507821CF2F430025C587 /* YKCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507721CF2F430025C587 /* YKCards.m */; };
 		2E20507B21CF2FC30025C587 /* SXTCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507A21CF2FC30025C587 /* SXTCover.m */; };
 		2E20507E21CF31300025C587 /* SXTData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507D21CF31300025C587 /* SXTData.m */; };
-		2E20508121CF316E0025C587 /* SXTLiveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508021CF316E0025C587 /* SXTLiveInfo.m */; };
+		2E20508121CF316E0025C587 /* YKLiveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508021CF316E0025C587 /* YKLiveInfo.m */; };
 		2E20508421CF430B0025C587 /* YingkNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508321CF430B0025C587 /* YingkNetHelper.m */; };
 		2E20508821CF93A20025C587 /* BINScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508721CF93A20025C587 /* BINScrollViewController.m */; };
 		2E20508E21CF9C9A0025C587 /* BINNearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508D21CF9C9A0025C587 /* BINNearByViewController.m */; };
 		2E20509121CF9CF50025C587 /* BINLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509021CF9CF50025C587 /* BINLiveViewController.m */; };
 		2E20509421CF9D1C0025C587 /* BINUserFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509321CF9D1C0025C587 /* BINUserFeedViewController.m */; };
-		2E20509821CFA5D60025C587 /* SXTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509621CFA5D60025C587 /* SXTMainTopView.m */; };
+		2E20509821CFA5D60025C587 /* YKMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509621CFA5D60025C587 /* YKMainTopView.m */; };
 		2E20509B21CFBCCF0025C587 /* BINPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20509A21CFBCCF0025C587 /* BINPlayViewController.m */; };
 		2E20509D21CFBD4F0025C587 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E20509C21CFBD4F0025C587 /* IJKMediaFramework.framework */; };
 		2EAA54FA21DB271D00450F13 /* YKNearByTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA54F921DB271D00450F13 /* YKNearByTableViewCell.m */; };
@@ -173,16 +173,16 @@
 		2E20506C21CE745B0025C587 /* BINScrollViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BINScrollViewTestViewController.m; sourceTree = "<group>"; };
 		2E20507021CF2BDC0025C587 /* SXTCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTCreator.h; sourceTree = "<group>"; };
 		2E20507121CF2BDC0025C587 /* SXTCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTCreator.m; sourceTree = "<group>"; };
-		2E20507321CF2EE30025C587 /* SXTResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTResponse.h; sourceTree = "<group>"; };
-		2E20507421CF2EE30025C587 /* SXTResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTResponse.m; sourceTree = "<group>"; };
-		2E20507621CF2F430025C587 /* SXTCards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTCards.h; sourceTree = "<group>"; };
-		2E20507721CF2F430025C587 /* SXTCards.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTCards.m; sourceTree = "<group>"; };
-		2E20507921CF2FC30025C587 /* SXTCover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTCover.h; sourceTree = "<group>"; };
+		2E20507321CF2EE30025C587 /* YKResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKResponse.h; sourceTree = "<group>"; };
+		2E20507421CF2EE30025C587 /* YKResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKResponse.m; sourceTree = "<group>"; };
+		2E20507621CF2F430025C587 /* YKCards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKCards.h; sourceTree = "<group>"; };
+		2E20507721CF2F430025C587 /* YKCards.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKCards.m; sourceTree = "<group>"; };
+		2E20507921CF2FC30025C587 /* YKCover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKCover.h; sourceTree = "<group>"; };
 		2E20507A21CF2FC30025C587 /* SXTCover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTCover.m; sourceTree = "<group>"; };
 		2E20507C21CF31300025C587 /* SXTData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTData.h; sourceTree = "<group>"; };
 		2E20507D21CF31300025C587 /* SXTData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTData.m; sourceTree = "<group>"; };
-		2E20507F21CF316E0025C587 /* SXTLiveInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLiveInfo.h; sourceTree = "<group>"; };
-		2E20508021CF316E0025C587 /* SXTLiveInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLiveInfo.m; sourceTree = "<group>"; };
+		2E20507F21CF316E0025C587 /* YKLiveInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKLiveInfo.h; sourceTree = "<group>"; };
+		2E20508021CF316E0025C587 /* YKLiveInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKLiveInfo.m; sourceTree = "<group>"; };
 		2E20508221CF430B0025C587 /* YingkNetHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YingkNetHelper.h; sourceTree = "<group>"; };
 		2E20508321CF430B0025C587 /* YingkNetHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YingkNetHelper.m; sourceTree = "<group>"; };
 		2E20508621CF93A20025C587 /* BINScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BINScrollViewController.h; sourceTree = "<group>"; };
@@ -193,8 +193,8 @@
 		2E20509021CF9CF50025C587 /* BINLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BINLiveViewController.m; sourceTree = "<group>"; };
 		2E20509221CF9D1C0025C587 /* BINUserFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BINUserFeedViewController.h; sourceTree = "<group>"; };
 		2E20509321CF9D1C0025C587 /* BINUserFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BINUserFeedViewController.m; sourceTree = "<group>"; };
-		2E20509621CFA5D60025C587 /* SXTMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTMainTopView.m; sourceTree = "<group>"; };
-		2E20509721CFA5D60025C587 /* SXTMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTMainTopView.h; sourceTree = "<group>"; };
+		2E20509621CFA5D60025C587 /* YKMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKMainTopView.m; sourceTree = "<group>"; };
+		2E20509721CFA5D60025C587 /* YKMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKMainTopView.h; sourceTree = "<group>"; };
 		2E20509921CFBCCF0025C587 /* BINPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BINPlayViewController.h; sourceTree = "<group>"; };
 		2E20509A21CFBCCF0025C587 /* BINPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BINPlayViewController.m; sourceTree = "<group>"; };
 		2E20509C21CFBD4F0025C587 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
@@ -488,16 +488,16 @@
 			children = (
 				2E20507021CF2BDC0025C587 /* SXTCreator.h */,
 				2E20507121CF2BDC0025C587 /* SXTCreator.m */,
-				2E20507321CF2EE30025C587 /* SXTResponse.h */,
-				2E20507421CF2EE30025C587 /* SXTResponse.m */,
-				2E20507621CF2F430025C587 /* SXTCards.h */,
-				2E20507721CF2F430025C587 /* SXTCards.m */,
-				2E20507921CF2FC30025C587 /* SXTCover.h */,
+				2E20507321CF2EE30025C587 /* YKResponse.h */,
+				2E20507421CF2EE30025C587 /* YKResponse.m */,
+				2E20507621CF2F430025C587 /* YKCards.h */,
+				2E20507721CF2F430025C587 /* YKCards.m */,
+				2E20507921CF2FC30025C587 /* YKCover.h */,
 				2E20507A21CF2FC30025C587 /* SXTCover.m */,
 				2E20507C21CF31300025C587 /* SXTData.h */,
 				2E20507D21CF31300025C587 /* SXTData.m */,
-				2E20507F21CF316E0025C587 /* SXTLiveInfo.h */,
-				2E20508021CF316E0025C587 /* SXTLiveInfo.m */,
+				2E20507F21CF316E0025C587 /* YKLiveInfo.h */,
+				2E20508021CF316E0025C587 /* YKLiveInfo.m */,
 				2EAA550121DBA20000450F13 /* YKTicker.h */,
 				2EAA550221DBA20000450F13 /* YKTicker.m */,
 			);
@@ -524,8 +524,8 @@
 		2E20509521CFA5BA0025C587 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2E20509721CFA5D60025C587 /* SXTMainTopView.h */,
-				2E20509621CFA5D60025C587 /* SXTMainTopView.m */,
+				2E20509721CFA5D60025C587 /* YKMainTopView.h */,
+				2E20509621CFA5D60025C587 /* YKMainTopView.m */,
 				2EAA54F821DB271D00450F13 /* YKNearByTableViewCell.h */,
 				2EAA54F921DB271D00450F13 /* YKNearByTableViewCell.m */,
 				2EAA54FB21DB979900450F13 /* YKBannerTableViewCell.h */,
@@ -750,7 +750,7 @@
 				2E20506721CE66820025C587 /* SXTUserHelper.m in Sources */,
 				2E0B80F121BCA86000E8AE37 /* MasonryTestViewController.m in Sources */,
 				2E0B80FB21BCBD2900E8AE37 /* BaseViewController.m in Sources */,
-				2E20509821CFA5D60025C587 /* SXTMainTopView.m in Sources */,
+				2E20509821CFA5D60025C587 /* YKMainTopView.m in Sources */,
 				2E20506A21CE66820025C587 /* NSString+CachePath.m in Sources */,
 				2EF762D221BA320100ABFEB1 /* ZBProgress.m in Sources */,
 				2EAA550621DC81C200450F13 /* YKLiveCollectionViewCell.m in Sources */,
@@ -760,7 +760,7 @@
 				2E20506D21CE745B0025C587 /* BINScrollViewTestViewController.m in Sources */,
 				2E20509B21CFBCCF0025C587 /* BINPlayViewController.m in Sources */,
 				2E20506821CE66820025C587 /* SXTCacheHelper.m in Sources */,
-				2E20508121CF316E0025C587 /* SXTLiveInfo.m in Sources */,
+				2E20508121CF316E0025C587 /* YKLiveInfo.m in Sources */,
 				2E0B80FE21BCE52700E8AE37 /* NetTestViewController.m in Sources */,
 				2E1D179521B6A09200A473D9 /* main.m in Sources */,
 				2E20509421CF9D1C0025C587 /* BINUserFeedViewController.m in Sources */,
@@ -784,10 +784,10 @@
 				2EAA54FD21DB979900450F13 /* YKBannerTableViewCell.m in Sources */,
 				2E20506921CE66820025C587 /* UIColor+HEX.m in Sources */,
 				2E20505A21CE665D0025C587 /* UIImageView+SDWebImage.m in Sources */,
-				2E20507821CF2F430025C587 /* SXTCards.m in Sources */,
+				2E20507821CF2F430025C587 /* YKCards.m in Sources */,
 				2E20507E21CF31300025C587 /* SXTData.m in Sources */,
 				2EAA550321DBA20000450F13 /* YKTicker.m in Sources */,
-				2E20507521CF2EE30025C587 /* SXTResponse.m in Sources */,
+				2E20507521CF2EE30025C587 /* YKResponse.m in Sources */,
 				2E20509121CF9CF50025C587 /* BINLiveViewController.m in Sources */,
 				2E20505B21CE665D0025C587 /* HttpTool.m in Sources */,
 				2E20508821CF93A20025C587 /* BINScrollViewController.m in Sources */,

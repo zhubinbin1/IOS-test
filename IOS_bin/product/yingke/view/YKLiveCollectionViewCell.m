@@ -8,7 +8,7 @@
 
 #import "YKLiveCollectionViewCell.h"
 @interface YKLiveCollectionViewCell()
-@property(nonatomic,strong)SXTCards* mCard;
+@property(nonatomic,strong)YKCards* mCard;
 @property(nonatomic,strong)UILabel* cityLabel;
 @property(nonatomic,strong)UILabel* nickNameLabel;
 @property(nonatomic,strong)UILabel* numberTabLabel;
@@ -16,9 +16,9 @@
 @property(nonatomic,strong)UIImageView* coverImg;
 @end
 @implementation YKLiveCollectionViewCell
--(void)setData:(SXTCards*)card{
+-(void)setData:(YKCards*)card{
     self.mCard = card;
-    SXTLiveInfo* liveInfo =card.data.live_info;
+    YKLiveInfo* liveInfo =card.data.live_info;
     [self.coverImg downloadImage:card.data.live_info.creator.portrait placeholder:@"gift_icon_vote"];
     [self.numberTabLabel setText:liveInfo.creator.veri_info];
     [self.nickNameLabel setText:liveInfo.creator.nick];

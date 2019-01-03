@@ -7,11 +7,11 @@
 //
 
 #import "BINScrollViewController.h"
-#import "SXTMainTopView.h"
+#import "YKMainTopView.h"
 @interface BINScrollViewController ()<UIScrollViewDelegate>
 @property(nonatomic,strong)UIScrollView* scrollView;
 @property(nonatomic,strong)NSArray* titleNames;
-@property(nonatomic,strong)SXTMainTopView* topView;
+@property(nonatomic,strong)YKMainTopView* topView;
 @end
 
 @implementation BINScrollViewController
@@ -27,10 +27,10 @@
     [self.view addSubview:self.scrollView];
     [self addSubController];
 }
--(SXTMainTopView *)topView{
+-(YKMainTopView *)topView{
     if (!_topView) {
         
-        _topView = [[SXTMainTopView alloc] initWithFrame:CGRectMake(0, 0, 200, 40) titles:self.titleNames tapView:^(NSInteger tag) {
+        _topView = [[YKMainTopView alloc] initWithFrame:CGRectMake(0, 0, 200, 40) titles:self.titleNames tapView:^(NSInteger tag) {
             
             CGPoint point = CGPointMake(tag * screenW ,self.scrollView.contentOffset.y);
             

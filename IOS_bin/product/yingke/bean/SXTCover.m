@@ -6,8 +6,8 @@
 //  Copyright © 2018年 binbin. All rights reserved.
 //
 
-#import "SXTCover.h"
+#import "YKCover.h"
 
-@implementation SXTCover
+@implementation YKCover
 
 @end

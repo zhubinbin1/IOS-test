@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
-#import "SXTLiveInfo.h"
+#import "YKLiveInfo.h"
 @interface BINPlayViewController : UIViewController
-@property(nonatomic,strong)SXTLiveInfo* live;
-- (instancetype)initWithLiveInfo:(SXTLiveInfo*) liveInfo;
+@property(nonatomic,strong)YKLiveInfo* live;
+- (instancetype)initWithLiveInfo:(YKLiveInfo*) liveInfo;
 @end

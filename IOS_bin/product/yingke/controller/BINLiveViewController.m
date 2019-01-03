@@ -8,14 +8,14 @@
 
 #import "BINLiveViewController.h"
 #import "YingkNetHelper.h"
-#import "SXTResponse.h"
+#import "YKResponse.h"
 #import "YKLiveCollectionViewCell.h"
 #import "BINPlayViewController.h"
 #import "YKUICollectionViewFlowLayout.h"
 
 @interface BINLiveViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong) YingkNetHelper* netHelper;
-@property(nonatomic,strong)NSArray<SXTCards*>* cards;
+@property(nonatomic,strong)NSArray<YKCards*>* cards;
 @property(nonatomic,strong)UICollectionView* mCollectionView;
 @end
 
@@ -26,7 +26,7 @@
     [self relayoutView];
     [self.mCollectionView registerClass:[YKLiveCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([YKLiveCollectionViewCell class])];
     //    self.view.backgroundColor = [UIColor greenColor];
-    [self.netHelper getYingKeHomeDataWithPage:0 success:^(SXTResponse *respon) {
+    [self.netHelper getYingKeHomeDataWithPage:0 success:^(YKResponse *respon) {
         self.cards =  [respon cards];
         if (self.mCollectionView) {
             [self.mCollectionView reloadData];
@@ -69,7 +69,7 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     [collectionView deselectItemAtIndexPath:indexPath animated:false];
-     SXTCards* card = self.cards[indexPath.row];
+     YKCards* card = self.cards[indexPath.row];
     BINPlayViewController* playCtr = [[BINPlayViewController alloc] initWithLiveInfo:card.data.live_info];
     [self.navigationController pushViewController:playCtr animated:YES];
 }

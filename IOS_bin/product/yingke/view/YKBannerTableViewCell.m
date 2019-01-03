@@ -7,7 +7,7 @@
 //
 
 #import "YKBannerTableViewCell.h"
-#import "SXTCards.h"
+#import "YKCards.h"
 @interface YKBannerTableViewCell()
 @property (nonatomic,strong)UIImageView* bannerImgV;
 @end
@@ -25,7 +25,7 @@
         make.edges.equalTo(self).insets(UIEdgeInsetsMake(5, 5, 5, 5));
     }];
 }
--(void)setData:(SXTCards *)card{
+-(void)setData:(YKCards *)card{
     [self.bannerImgV downloadImage:card.data.ticker[0].image placeholder:@"sm_gift_bag_empty"];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

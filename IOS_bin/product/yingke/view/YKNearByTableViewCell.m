@@ -22,10 +22,10 @@
     [super setSelected:selected animated:animated];
     
 }
--(void) setData:(SXTCards*) card{
+-(void) setData:(YKCards*) card{
     self.card = card;
     if (card&&card.data&&card.data.live_info) {
-        SXTLiveInfo* liveInfo =card.data.live_info;
+        YKLiveInfo* liveInfo =card.data.live_info;
         if(liveInfo.creator) {
             [self.coverImg downloadImage: liveInfo.creator.portrait placeholder:@"sm_gift_bag_empty"];
             [self.numberTabLabel setText:liveInfo.creator.veri_info];

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SXTCover : NSObject
+@interface YKCover : NSObject
 @property(nonatomic,copy)NSString* elements;
 @property(nonatomic,assign)NSInteger style;
 @end

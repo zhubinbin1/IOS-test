@@ -8,14 +8,14 @@
 
 #import "YingkNetHelper.h"
 #import "HttpTool.h"
-#import "SXTResponse.h"
+#import "YKResponse.h"
 
 @implementation YingkNetHelper
 //MARK:test
 -(void) getYingKeNet{
     NSDictionary* par = @{@"offset":@1};
     [HttpTool getWithPath:API_HomePage params:par success:^(id json) {
-        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+        YKResponse* res =  [YKResponse objectWithKeyValues:json];
         NSLog(@"success===:%@",res.error_msg);
         //        SXTResponse MJReplacedKeyFromPropertyName121
     } failure:^(NSError *error) {
@@ -27,7 +27,7 @@
 //    [par setValue:page forKey:@"offset"];
     [par setObject:@(page) forKey:@"offset"];
     [HttpTool getWithPath:API_HomePage params:par success:^(id json) {
-        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+        YKResponse* res =  [YKResponse objectWithKeyValues:json];
         NSLog(@"success===:%@",res.error_msg);
         success(res);
     } failure:^(NSError *error) {
@@ -40,7 +40,7 @@
     NSDictionary* par = @{@"uid":@85149891,@"latitude":@40.090562,@"longitude":@116.413353};
 
     [HttpTool getWithPath:API_NearBy params:par success:^(id json) {
-        SXTResponse* resObj =  [SXTResponse objectWithKeyValues:json];
+        YKResponse* resObj =  [YKResponse objectWithKeyValues:json];
         NSLog(@"success===:%@",resObj.error_msg);
         success(resObj);
     } failure:^(NSError *error) {
@@ -50,7 +50,7 @@
 - (void)getYingKeUserFeedData:(SUCCESS)success fail:(FAILED)failed{
 //    NSDictionary* par = @{@"offset":@1};
     [HttpTool getWithPath:API_UserFeed params:nil success:^(id json) {
-        SXTResponse* res =  [SXTResponse objectWithKeyValues:json];
+        YKResponse* res =  [YKResponse objectWithKeyValues:json];
         NSLog(@"success===:%@",res.error_msg);
         success(res);
     } failure:^(NSError *error) {

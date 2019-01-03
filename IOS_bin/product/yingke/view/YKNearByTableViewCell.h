@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SXTCards.h"
+#import "YKCards.h"
 #import "YKLiveBaseTableViewCell.h"
 @interface YKNearByTableViewCell : YKLiveBaseTableViewCell
 //@property (nonatomic,strong)SXTCards* card;
--(void) setData:(SXTCards*) card;
+-(void) setData:(YKCards*) card;
 @end

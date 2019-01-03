@@ -18,7 +18,7 @@
 //    }
 //    return self;
 //}
-- (void)setData:(SXTCards*)card{
+- (void)setData:(YKCards*)card{
     
 }
 

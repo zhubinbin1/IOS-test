@@ -1,5 +1,5 @@
 //
-//  SXTLiveInfo.h
+//  YKLiveInfo.h
 //  IOS_bin
 //
 //  Created by binbin on 2018/12/23.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SXTCreator.h"
 
-@interface SXTLiveInfo : NSObject
+@interface YKLiveInfo : NSObject
 @property(nonatomic,strong)NSString* city;
 @property(nonatomic,strong)SXTCreator* creator;
 @property (nonatomic, assign) NSNumber *end_time;

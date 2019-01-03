@@ -6,9 +6,9 @@
 //  Copyright © 2018年 binbin. All rights reserved.
 //
 
-#import "SXTCards.h"
+#import "YKCards.h"
 
-@implementation SXTCards
+@implementation YKCards
 //- (NSMutableDictionary *)key
 //+(instancetype)objectWithKeyValues:(id)keyValues{
 //    return @{@"data":[SXTData class]};

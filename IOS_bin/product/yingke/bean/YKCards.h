@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SXTCover.h"
+#import "YKCover.h"
 #import "SXTData.h"
 
-@interface SXTCards : NSObject
-@property(nonatomic,strong)SXTCover* cover;
+@interface YKCards : NSObject
+@property(nonatomic,strong)YKCover* cover;
 @property(nonatomic,strong)SXTData* data;
 
 @end

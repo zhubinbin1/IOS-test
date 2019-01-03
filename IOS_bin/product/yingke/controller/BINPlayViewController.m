@@ -35,7 +35,7 @@
     return _closeBtn;
     
 }
-- (instancetype)initWithLiveInfo:(SXTLiveInfo*) liveInfo
+- (instancetype)initWithLiveInfo:(YKLiveInfo*) liveInfo
 {
     self = [super init];
     if (self) {

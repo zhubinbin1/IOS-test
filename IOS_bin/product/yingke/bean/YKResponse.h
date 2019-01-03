@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SXTCards.h"
+#import "YKCards.h"
 
-@interface SXTResponse : NSObject
+@interface YKResponse : NSObject
 @property(nonatomic,assign)NSUInteger dm_error;
 @property(nonatomic,copy)NSString* error_msg;
-@property(nonatomic,strong)NSArray<SXTCards*>* cards;
+@property(nonatomic,strong)NSArray<YKCards*>* cards;
 //+(NSMutableArray *)keyValuesArrayWithObjectArray:(NSArray *)objectArray ignoredKeys:(NSArray *)ignoredKeys;
 
 @end

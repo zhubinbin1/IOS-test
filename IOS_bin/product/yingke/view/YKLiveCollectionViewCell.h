@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SXTCards.h"
+#import "YKCards.h"
   
 @interface YKLiveCollectionViewCell : UICollectionViewCell
--(void)setData:(SXTCards*)card;
+-(void)setData:(YKCards*)card;
 @end

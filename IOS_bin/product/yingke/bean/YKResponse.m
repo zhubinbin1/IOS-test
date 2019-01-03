@@ -6,12 +6,12 @@
 //  Copyright © 2018年 binbin. All rights reserved.
 //
 
-#import "SXTResponse.h"
+#import "YKResponse.h"
 
-@implementation SXTResponse
+@implementation YKResponse
 //self MJReplacedKeyFromPropertyName121
 +(NSDictionary *)objectClassInArray{
-    return @{@"cards":[SXTCards class]};
+    return @{@"cards":[YKCards class]};
 }
 
 @end

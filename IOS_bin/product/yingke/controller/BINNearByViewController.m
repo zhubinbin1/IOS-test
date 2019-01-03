@@ -8,11 +8,11 @@
 
 #import "BINNearByViewController.h"
 #import "YingkNetHelper.h"
-#import "SXTResponse.h"
+#import "YKResponse.h"
 #import "YKNearByTableViewCell.h"
 #import "YKBannerTableViewCell.h"
 #import "BINPlayViewController.h"
-#import "SXTCards.h"
+#import "YKCards.h"
 static  NSString* const LIVE_TYPE = @"live";
 static  NSString* const WEB_TYPE = @"web";
 static  NSString* const PUBLIC_TYPE = @"public_live";
@@ -23,7 +23,7 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
 
 @interface BINNearByViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) YingkNetHelper* netHelper;
-@property(nonatomic,strong)NSArray<SXTCards*>* cards;
+@property(nonatomic,strong)NSArray<YKCards*>* cards;
 @end
 
 @implementation BINNearByViewController
@@ -32,7 +32,7 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
     [super viewDidLoad];
     [self registerClass];
     self.tableView.backgroundColor = [UIColor whiteColor];
-    [self.netHelper getYingKeNearData:^(SXTResponse *respon) {
+    [self.netHelper getYingKeNearData:^(YKResponse *respon) {
         self.cards =  [respon cards];
         [self.tableView reloadData];
         //NSLog(@"==success==%@",self.cards[0].data.live_info.creator.nick);
@@ -70,7 +70,7 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
 }
 -(Class)getTableCellByClass:(NSIndexPath *)indexPath{
     Class baseCls;
-    SXTCards* card = self.cards[indexPath.row];
+    YKCards* card = self.cards[indexPath.row];
     if ([card.data.redirect_type isEqualToString:LIVE_TYPE]) {
         baseCls = [YKNearByTableViewCell class] ;
     }else if([card.data.redirect_type isEqualToString:WEB_TYPE]){
@@ -83,7 +83,7 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
     return baseCls;
 }
 -(NSString*) getCardType:(NSIndexPath*)indexPath{
-    SXTCards* card = self.cards[indexPath.row];
+    YKCards* card = self.cards[indexPath.row];
     return card.data.redirect_type;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -94,7 +94,7 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:false];
-     SXTCards* card = self.cards[indexPath.row];
+     YKCards* card = self.cards[indexPath.row];
 //    BINPlayViewController* playVc = [[BINPlayViewController alloc] init];
     BINPlayViewController* playVc = [[BINPlayViewController alloc] initWithLiveInfo:card.data.live_info];
     [self.navigationController pushViewController:playVc animated:true];

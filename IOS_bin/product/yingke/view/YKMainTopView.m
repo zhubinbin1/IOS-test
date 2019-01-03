@@ -2,9 +2,9 @@
 //  SXTMainTopView.m
 //
 
-#import "SXTMainTopView.h"
+#import "YKMainTopView.h"
 
-@interface SXTMainTopView ()
+@interface YKMainTopView ()
 
 @property (nonatomic, strong) UIView * lineView;
 
@@ -14,7 +14,7 @@
 
 @end
 
-@implementation SXTMainTopView
+@implementation YKMainTopView
 
 - (NSMutableArray *)buttons {
     
