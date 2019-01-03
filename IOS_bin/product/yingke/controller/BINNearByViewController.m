@@ -61,17 +61,9 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
 //}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
-//    YKLiveBaseTableViewCell* baseCell;
-//    static NSString *cellIdentifier =@"nearBycellIdentifier";
-//    baseCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//    if (baseCell==nil) {
-//        baseCell = [[YKNearByTableViewCell alloc]init];
-//    }
-    
-        YKLiveBaseTableViewCell* baseCell;
-        Class baseCls =[self getTableCellByClass:indexPath];
-        baseCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(baseCls) forIndexPath:indexPath];
+    YKLiveBaseTableViewCell* baseCell;
+    Class baseCls =[self getTableCellByClass:indexPath];
+    baseCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(baseCls) forIndexPath:indexPath];
     
     [baseCell setData:self.cards[indexPath.row]];
     return baseCell;
@@ -96,13 +88,15 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([[self getCardType:indexPath] isEqualToString:WEB_TYPE]) {
-         return screenW/2;
+        return screenW/2;
     }
     return screenW-10;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:false];
-    BINPlayViewController* playVc = [[BINPlayViewController alloc] init];
+     SXTCards* card = self.cards[indexPath.row];
+//    BINPlayViewController* playVc = [[BINPlayViewController alloc] init];
+    BINPlayViewController* playVc = [[BINPlayViewController alloc] initWithLiveInfo:card.data.live_info];
     [self.navigationController pushViewController:playVc animated:true];
 }
 
