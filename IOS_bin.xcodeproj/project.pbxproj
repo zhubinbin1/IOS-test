@@ -55,7 +55,7 @@
 		2E20507221CF2BDC0025C587 /* SXTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507121CF2BDC0025C587 /* SXTCreator.m */; };
 		2E20507521CF2EE30025C587 /* YKResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507421CF2EE30025C587 /* YKResponse.m */; };
 		2E20507821CF2F430025C587 /* YKCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507721CF2F430025C587 /* YKCards.m */; };
-		2E20507B21CF2FC30025C587 /* SXTCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507A21CF2FC30025C587 /* SXTCover.m */; };
+		2E20507B21CF2FC30025C587 /* YKCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507A21CF2FC30025C587 /* YKCover.m */; };
 		2E20507E21CF31300025C587 /* SXTData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20507D21CF31300025C587 /* SXTData.m */; };
 		2E20508121CF316E0025C587 /* YKLiveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508021CF316E0025C587 /* YKLiveInfo.m */; };
 		2E20508421CF430B0025C587 /* YingkNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20508321CF430B0025C587 /* YingkNetHelper.m */; };
@@ -178,7 +178,7 @@
 		2E20507621CF2F430025C587 /* YKCards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKCards.h; sourceTree = "<group>"; };
 		2E20507721CF2F430025C587 /* YKCards.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKCards.m; sourceTree = "<group>"; };
 		2E20507921CF2FC30025C587 /* YKCover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKCover.h; sourceTree = "<group>"; };
-		2E20507A21CF2FC30025C587 /* SXTCover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTCover.m; sourceTree = "<group>"; };
+		2E20507A21CF2FC30025C587 /* YKCover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKCover.m; sourceTree = "<group>"; };
 		2E20507C21CF31300025C587 /* SXTData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTData.h; sourceTree = "<group>"; };
 		2E20507D21CF31300025C587 /* SXTData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTData.m; sourceTree = "<group>"; };
 		2E20507F21CF316E0025C587 /* YKLiveInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKLiveInfo.h; sourceTree = "<group>"; };
@@ -493,7 +493,7 @@
 				2E20507621CF2F430025C587 /* YKCards.h */,
 				2E20507721CF2F430025C587 /* YKCards.m */,
 				2E20507921CF2FC30025C587 /* YKCover.h */,
-				2E20507A21CF2FC30025C587 /* SXTCover.m */,
+				2E20507A21CF2FC30025C587 /* YKCover.m */,
 				2E20507C21CF31300025C587 /* SXTData.h */,
 				2E20507D21CF31300025C587 /* SXTData.m */,
 				2E20507F21CF316E0025C587 /* YKLiveInfo.h */,
@@ -768,7 +768,7 @@
 				2E1D17BF21B7FD3A00A473D9 /* ViewUtils.m in Sources */,
 				2E1D178721B6A08F00A473D9 /* AppDelegate.m in Sources */,
 				2E20508421CF430B0025C587 /* YingkNetHelper.m in Sources */,
-				2E20507B21CF2FC30025C587 /* SXTCover.m in Sources */,
+				2E20507B21CF2FC30025C587 /* YKCover.m in Sources */,
 				2EAA54FA21DB271D00450F13 /* YKNearByTableViewCell.m in Sources */,
 				2E0B811C21BD3AB300E8AE37 /* TableViewTestViewController.m in Sources */,
 				2E0B812321BE291F00E8AE37 /* TableViewTestCell.m in Sources */,

@@ -13,5 +13,8 @@
 +(NSDictionary *)objectClassInArray{
     return @{@"cards":[YKCards class]};
 }
+//+ (NSDictionary *)replacedKeyFromPropertyName{
+//    return @{@"cards":@"global_cards"};
+//}
 
 @end
