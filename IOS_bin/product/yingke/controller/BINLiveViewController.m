@@ -11,6 +11,7 @@
 #import "SXTResponse.h"
 #import "YKLiveCollectionViewCell.h"
 #import "BINPlayViewController.h"
+#import "YKUICollectionViewFlowLayout.h"
 
 @interface BINLiveViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong) YingkNetHelper* netHelper;
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     [self relayoutView];
     [self.mCollectionView registerClass:[YKLiveCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([YKLiveCollectionViewCell class])];
-//    self.view.backgroundColor = [UIColor greenColor];
+    //    self.view.backgroundColor = [UIColor greenColor];
     [self.netHelper getYingKeHomeDataWithPage:0 success:^(SXTResponse *respon) {
         self.cards =  [respon cards];
         if (self.mCollectionView) {
@@ -43,21 +44,25 @@
 
 -(UICollectionView *)mCollectionView{
     if (!_mCollectionView) {
-        
-        UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        _mCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, screenW, screenH) collectionViewLayout:flowLayout];
+
+        YKUICollectionViewFlowLayout* flowLayout = [[YKUICollectionViewFlowLayout alloc] init];
+        flowLayout.minimumLineSpacing = 0;
+        flowLayout.minimumInteritemSpacing = 0;
+        flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        _mCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, screenW, screenH- 49) collectionViewLayout:flowLayout];
         _mCollectionView.delegate = self;
         _mCollectionView.dataSource = self;
         _mCollectionView.backgroundColor = [UIColor whiteColor];
+        
         [self.view addSubview:_mCollectionView];
     }
     return _mCollectionView;
 }
 -(void)relayoutView{
     
-//    [self.mCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self).insets(UIEdgeInsetsMake(0, 0, 0, 0));
-//    }];
+    //    [self.mCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+    //        make.edges.equalTo(self).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+    //    }];
 }
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
@@ -70,24 +75,29 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     NSString* identifier = NSStringFromClass([YKLiveCollectionViewCell class]);
     YKLiveCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-
-    if (!cell) {
-        cell = [[YKLiveCollectionViewCell alloc] init];
-    }
-    
-        [cell setData:self.cards[indexPath.row]];
+    //    if (!cell) {
+    //        cell = [[YKLiveCollectionViewCell alloc] init];
+    //    }
+    [cell setData:self.cards[indexPath.row]];
     return cell;
     
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(screenW/2-10, screenW/2-10);
+    return CGSizeMake(screenW/2, screenW/2);
+}
+-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
+    return 0;
+}
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    return 0;
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.cards.count;
 }
+
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(3, 1.5, 3, 1.5);
+    return UIEdgeInsetsMake(0, 0, 0, 0);
 }
 -(YingkNetHelper *)netHelper{
     if (!_netHelper) {

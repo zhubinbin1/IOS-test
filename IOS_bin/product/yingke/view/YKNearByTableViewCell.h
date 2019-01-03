@@ -10,6 +10,6 @@
 #import "SXTCards.h"
 #import "YKLiveBaseTableViewCell.h"
 @interface YKNearByTableViewCell : YKLiveBaseTableViewCell
-@property (nonatomic,strong)SXTCards* card;
+//@property (nonatomic,strong)SXTCards* card;
 -(void) setData:(SXTCards*) card;
 @end

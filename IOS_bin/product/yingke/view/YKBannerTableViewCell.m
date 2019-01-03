@@ -12,11 +12,10 @@
 @property (nonatomic,strong)UIImageView* bannerImgV;
 @end
 @implementation YKBannerTableViewCell
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self =[super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [UIColor whiteColor];
         [self reLayout];
     }
     return self;
@@ -27,15 +26,11 @@
     }];
 }
 -(void)setData:(SXTCards *)card{
-//    card.data.live_info.
-//    NSArray<YKTicker*>* array = card.data.ticker;
-//    [self.bannerImgV downloadImage:card.data.ticker[0].image placeholder:nil];
-//    NSLog(@"zhubin==YKBannerTableViewCell==%@",array);
-    [self.bannerImgV downloadImage:card.data.live_info.creator.portrait placeholder:@"sm_gift_bag_empty"];
+    [self.bannerImgV downloadImage:card.data.ticker[0].image placeholder:@"sm_gift_bag_empty"];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 
@@ -43,8 +38,8 @@
     if (!_bannerImgV) {
         _bannerImgV =[[UIImageView alloc] init];
         _bannerImgV.layer.masksToBounds = YES;
-        _bannerImgV.layer.maskedCorners = 3;
-        _bannerImgV.backgroundColor =[UIColor blackColor];
+        _bannerImgV.layer.cornerRadius = 5;
+        _bannerImgV.backgroundColor =[UIColor whiteColor];
         [self addSubview:_bannerImgV];
     }
     return _bannerImgV;

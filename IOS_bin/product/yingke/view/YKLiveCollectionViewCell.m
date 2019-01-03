@@ -18,7 +18,14 @@
 @implementation YKLiveCollectionViewCell
 -(void)setData:(SXTCards*)card{
     self.mCard = card;
+    SXTLiveInfo* liveInfo =card.data.live_info;
     [self.coverImg downloadImage:card.data.live_info.creator.portrait placeholder:@"gift_icon_vote"];
+    [self.numberTabLabel setText:liveInfo.creator.veri_info];
+    [self.nickNameLabel setText:liveInfo.creator.nick];
+    [self.renQiLabel setText:[liveInfo.online_users stringValue]];
+    if (liveInfo.city) {
+        [self.cityLabel setText:liveInfo.city];
+    }
 }
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -55,9 +62,9 @@
 -(UIImageView *)coverImg{
     if (!_coverImg) {
         _coverImg = [[UIImageView alloc]init];
-        _coverImg.layer.cornerRadius = 10;
+        _coverImg.layer.cornerRadius = 5;
         _coverImg.layer.masksToBounds = YES;
-//        _coverImg.backgroundColor = [UIColor yellowColor];
+        //        _coverImg.backgroundColor = [UIColor yellowColor];
         [self addSubview:_coverImg];
     }
     return _coverImg;

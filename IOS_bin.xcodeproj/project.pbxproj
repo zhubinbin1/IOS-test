@@ -23,6 +23,7 @@
 		2E0C6E0F21C606DA00E52214 /* AudioStreamerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C6E0E21C606DA00E52214 /* AudioStreamerViewController.m */; };
 		2E0C6E1221C6097300E52214 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C6E1121C6097300E52214 /* FMDBViewController.m */; };
 		2E0C6E1521C609A800E52214 /* MJRefreshTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C6E1421C609A800E52214 /* MJRefreshTestViewController.m */; };
+		2E1019EF21DDCEB60053585C /* YKUICollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1019EE21DDCEB60053585C /* YKUICollectionViewFlowLayout.m */; };
 		2E1D178721B6A08F00A473D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D178621B6A08F00A473D9 /* AppDelegate.m */; };
 		2E1D178D21B6A08F00A473D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D178B21B6A08F00A473D9 /* Main.storyboard */; };
 		2E1D178F21B6A09200A473D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D178E21B6A09200A473D9 /* Assets.xcassets */; };
@@ -110,6 +111,8 @@
 		2E0C6E1121C6097300E52214 /* FMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
 		2E0C6E1321C609A800E52214 /* MJRefreshTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshTestViewController.h; sourceTree = "<group>"; };
 		2E0C6E1421C609A800E52214 /* MJRefreshTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshTestViewController.m; sourceTree = "<group>"; };
+		2E1019ED21DDCEB60053585C /* YKUICollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKUICollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		2E1019EE21DDCEB60053585C /* YKUICollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKUICollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		2E1D178221B6A08F00A473D9 /* IOS_bin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_bin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1D178521B6A08F00A473D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E1D178621B6A08F00A473D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -492,6 +495,8 @@
 				2EAA54FF21DB97B600450F13 /* YKLiveBaseTableViewCell.m */,
 				2EAA550421DC81C200450F13 /* YKLiveCollectionViewCell.h */,
 				2EAA550521DC81C200450F13 /* YKLiveCollectionViewCell.m */,
+				2E1019ED21DDCEB60053585C /* YKUICollectionViewFlowLayout.h */,
+				2E1019EE21DDCEB60053585C /* YKUICollectionViewFlowLayout.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -718,6 +723,7 @@
 				2E0C6E0F21C606DA00E52214 /* AudioStreamerViewController.m in Sources */,
 				2E0C6E0C21C5DDA100E52214 /* PerSon.m in Sources */,
 				2E0C6E1221C6097300E52214 /* FMDBViewController.m in Sources */,
+				2E1019EF21DDCEB60053585C /* YKUICollectionViewFlowLayout.m in Sources */,
 				2E20508E21CF9C9A0025C587 /* BINNearByViewController.m in Sources */,
 				2E0C6E1521C609A800E52214 /* MJRefreshTestViewController.m in Sources */,
 				2EAA550021DB97B600450F13 /* YKLiveBaseTableViewCell.m in Sources */,

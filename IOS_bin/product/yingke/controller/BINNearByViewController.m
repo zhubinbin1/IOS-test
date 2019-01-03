@@ -31,42 +31,48 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self registerClass];
-    self.view.backgroundColor = [UIColor redColor];
+    self.tableView.backgroundColor = [UIColor whiteColor];
     [self.netHelper getYingKeNearData:^(SXTResponse *respon) {
         self.cards =  [respon cards];
         [self.tableView reloadData];
-        //                NSLog(@"==success==%@",self.cards[0].data.live_info.creator.nick);
+        //NSLog(@"==success==%@",self.cards[0].data.live_info.creator.nick);
     } fail:^(NSError *error) {
         NSLog(@"==error==");
     }];
 }
+
 -(void)registerClass{
+    //    NSLog(@"zhubin==[YKBannerTableViewCell class]  %@",[YKBannerTableViewCell class]);
     [self.tableView registerClass:[YKNearByTableViewCell class] forCellReuseIdentifier:NSStringFromClass([YKNearByTableViewCell class])];
     [self.tableView registerClass:[YKBannerTableViewCell class] forCellReuseIdentifier:NSStringFromClass([YKBannerTableViewCell class])];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.cards.count;
 }
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-//    return 1
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 0;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 0;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return 0;
+//}
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+//    return 0;
+//}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    //    static NSString *cellIdentifier = @"Cell";
-    YKLiveBaseTableViewCell* baseCell;
-    Class baseCls =[self getTableCellByClass:indexPath];
-    //    baseCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    baseCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(baseCls) forIndexPath:indexPath];
+    
+//    YKLiveBaseTableViewCell* baseCell;
+//    static NSString *cellIdentifier =@"nearBycellIdentifier";
+//    baseCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 //    if (baseCell==nil) {
-//        baseCell=[[baseCls alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass(baseCls)];
+//        baseCell = [[YKNearByTableViewCell alloc]init];
 //    }
+    
+        YKLiveBaseTableViewCell* baseCell;
+        Class baseCls =[self getTableCellByClass:indexPath];
+        baseCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(baseCls) forIndexPath:indexPath];
+    
     [baseCell setData:self.cards[indexPath.row]];
     return baseCell;
 }
@@ -76,7 +82,7 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
     if ([card.data.redirect_type isEqualToString:LIVE_TYPE]) {
         baseCls = [YKNearByTableViewCell class] ;
     }else if([card.data.redirect_type isEqualToString:WEB_TYPE]){
-        baseCls = [YKBannerTableViewCell class];
+        baseCls = [YKBannerTableViewCell class];//YKBannerTableViewCell
     }else if([card.data.redirect_type isEqualToString:PUBLIC_TYPE]){
         baseCls = [YKNearByTableViewCell class] ;
     }else{
@@ -84,7 +90,14 @@ static  NSString* const PUBLIC_TYPE = @"public_live";
     }
     return baseCls;
 }
+-(NSString*) getCardType:(NSIndexPath*)indexPath{
+    SXTCards* card = self.cards[indexPath.row];
+    return card.data.redirect_type;
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([[self getCardType:indexPath] isEqualToString:WEB_TYPE]) {
+         return screenW/2;
+    }
     return screenW-10;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -36,19 +36,26 @@
         }
         [self.renQiLabel setText:[liveInfo.online_users stringValue]];
     }
-//    NSLog(@"YKNearByTableViewCell===%@",self.card);
+    //    NSLog(@"YKNearByTableViewCell===%@",self.card);
     
 }
 - (void)layoutSubviews{
     [super layoutSubviews];
 }
--(instancetype)initWithFrame:(CGRect)frame{
-    if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor yellowColor];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.backgroundColor = [UIColor whiteColor];
         [self reLayout];
     }
     return self;
 }
+//-(instancetype)initWithFrame:(CGRect)frame{
+//    if (self = [super initWithFrame:frame]) {
+//        self.backgroundColor = [UIColor whiteColor];
+//        [self reLayout];
+//    }
+//    return self;
+//}
 -(void)reLayout{
     [self.coverImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self).insets(UIEdgeInsetsMake(5, 10, 5, 10));
@@ -77,7 +84,7 @@
         _coverImg = [[UIImageView alloc]init];
         _coverImg.layer.cornerRadius = 10;
         _coverImg.layer.masksToBounds = YES;
-          _coverImg.backgroundColor = [UIColor yellowColor];
+        _coverImg.backgroundColor = [UIColor whiteColor];
         [self addSubview:_coverImg];
     }
     return _coverImg;
