@@ -21,15 +21,16 @@
 @end
 
 @implementation BINPlayViewController
-
+#define CLOSE_IMAGE_SIZE  50
 - (UIButton *)closeBtn {
     
     if (!_closeBtn) {
         
-        UIImage * image = [UIImage imageNamed:@"sm_gift_bag_empty"];
+        //        UIImage * image = [UIImage imageNamed:@"sm_gift_bag_empty"];
         _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_closeBtn setImage:image forState:UIControlStateNormal];
-        _closeBtn.frame = CGRectMake(screenW - image.size.width - 10, screenH - image.size.height - 10, image.size.width, image.size.height);
+        //        [_closeBtn setImage:image forState:UIControlStateNormal];
+        [_closeBtn setTitle:@"关闭" forState:UIControlStateNormal];
+        _closeBtn.frame = CGRectMake(screenW - CLOSE_IMAGE_SIZE - 10, screenH - CLOSE_IMAGE_SIZE - 10, CLOSE_IMAGE_SIZE, CLOSE_IMAGE_SIZE);
         [_closeBtn addTarget:self action:@selector(closeLive:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _closeBtn;
@@ -45,7 +46,7 @@
 }
 - (void)closeLive:(UIButton *)button {
     
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
